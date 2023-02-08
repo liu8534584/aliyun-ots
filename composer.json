@@ -1,0 +1,28 @@
+{
+  "name": "yifei/aliyun-ots",
+  "description": "AliYun Log SDK for PHP",
+  "homepage": "https://www.aliyun.com",
+  "type": "library",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "liuda",
+      "email": "liuda@xiaoshiji.com"
+    }
+  ],
+  "require": {
+    "php": ">=5.4",
+    "psr/http-message": "1.0.x",
+    "phpunit/phpunit": "4.0.x",
+    "guzzlehttp/guzzle":"6.2"
+  },
+  "minimum-stability": "stable",
+  "autoload": {
+    "psr-4": {
+      "Aliyun\\OTS\\": "./src/OTS"
+    },
+    "files": ["./src/functions.php", "./src/OTS/ProtoBuffer/pb_message.php", "./src/OTS/ProtoBuffer/pb_proto_ots.php"]
+  },
+  "version": "1.0.0"
+
+}
